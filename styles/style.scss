@@ -1,0 +1,831 @@
+$main-color: #E40015;
+$background-color: #FAFAFA;
+$pricing-plan-color: #474747;
+$section-header-color: #383838;
+$section-text-color: #757575;
+$header-font: 'Playfair Display', serif;
+$paragraph-font: 'Lato', sans-serif;
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.main-wrapper {
+    position: relative;
+    left: 0;
+    transition: all 0.7s;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ----------------------------HEADINGS & PARAGRAGH STYLES ----------------------------------*/
+
+h1,
+h2,
+h3 {
+    font-family: $header-font;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $paragraph-font;
+}
+
+.gymName {
+    margin: 0;
+}
+
+.gymName-bottom {
+    margin-bottom: 10px;
+}
+
+.gymName-link {
+    color: $main-color;
+    font-size: 3rem;
+}
+
+.background-header {
+    color: $background-color;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.arrow {
+    position: absolute;
+    display: none;
+    color: $background-color;
+    font-size: 5rem;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.section-header {
+    font-size: 3.5rem;
+    text-align: center;
+    color: $section-header-color;
+    letter-spacing: 3px;
+}
+
+.section-text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    width: 60%;
+    margin: 5px auto;
+    color: $section-text-color;
+}
+
+.class-caption {
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: $section-header-color;
+}
+
+.class-text {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    color: $section-text-color;
+}
+
+.plan-name-header {
+    color: $background-color;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0 0 5px 0;
+}
+
+.plan-name-text {
+    text-align: center;
+    color: #ACACAC;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.pricing-header {
+    color: $background-color;
+}
+
+.pricing-text {
+    color: $main-color;
+}
+
+.plan-price-text {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.plan-price-text span {
+    font-size: 1.2rem;
+}
+
+.trainer-name {
+    text-align: center;
+    color: $section-header-color;
+    font-size: 2rem;
+    margin: 25px 0 15px 0;
+}
+
+.contactUS,
+.footerText {
+    color: white;
+}
+
+.footerText {
+    font-size: 1.4rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: white;
+    background: black;
+    margin: 15px 0 0 0;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+/* ------------------------   LINK STYLES  ----------------------------------------*/
+
+a {
+    text-decoration: none;
+    font-family: $paragraph-font;
+}
+
+.nav-link,
+.mobile-link {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: $background-color;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border 0.7s;
+    padding-bottom: 5px;
+    transition: all 0.7s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    border-bottom: 1px solid $main-color;
+}
+
+.mobile:hover,
+.mobile:active {
+    color: $main-color;
+}
+
+.startNow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    text-align: center;
+    color: $main-color;
+    transform: translateX(-50%);
+    padding: 5px 25px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border: 1px solid $main-color;
+    border-radius: 200px;
+    transition-delay: all 0.7s;
+}
+
+.startNow:hover,
+.startNow:active {
+    color: white;
+    background: $main-color;
+}
+
+.class-figure-link {
+    color: black;
+}
+
+.trainer-social-link {
+    font-size: 1.5rem;
+    color: $section-text-color;
+    transition: color 0.7s;
+}
+
+.trainer-social-link:hover,
+.trainer-social-link:active {
+    color: black;
+}
+
+.elite-social-link {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.7s;
+}
+
+.elite-social-link:hover,
+.elite-social-link:active {
+    color: $main-color;
+}
+
+/* ------------------------   HEADER STYLES  ----------------------------------------*/
+
+.background-container {
+    height: 100vh;
+    position: relative;
+    background: #000;
+    padding-top: 20px;
+}
+
+.background {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container:hover .arrow {
+    display: block;
+}
+
+.fadeOut {
+    animation: fadeOut 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+.background-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/man-squatting.jpg);
+}
+
+.background-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/Man-with-dumbell.jpg);
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.arrow-left {
+    top: 50%;
+    left: 2%;
+}
+
+.arrow-right {
+    top: 50%;
+    right: 2%;
+}
+
+.nav-main {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-main-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    width: 30%;
+    left: -30%;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    transition: all 0.7s;
+}
+
+.mobile-nav li {
+    margin: 0 0 20px 0;
+    width: 70%;
+    padding: 20px 0;
+    border-bottom: 1px solid $section-text-color;
+}
+
+.mobile-nav li:first-of-type {
+    border-bottom: none;
+}
+
+.nav-main-list li {
+    margin-right: 30px;
+}
+
+.nav-main-list li:last-of-type {
+    margin-right: 0;
+}
+
+.hamburger {
+    color: $background-color;
+    display: none;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.exit-responsive {
+    font-size: 2rem;
+    color: $background-color;
+}
+
+/* ------------------------   SECTION STYLES  ----------------------------------------*/
+
+.sec {
+    padding: 75px 0;
+    background: $background-color;
+}
+
+.class-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.class-figure {
+    border: 1px solid #888888;
+    box-shadow: 10px 10px 8px #888888;
+    transition: all 0.5s;
+    background: white;
+}
+
+.class-figure:hover {
+    transform: scale(1.1);
+}
+
+.class-figure-1 {
+    margin: 0 30px 0 0;
+    width: calc((100% - 60px) / 3);
+}
+
+.class-figure-1:last-of-type {
+    margin-right: 0;
+}
+
+.class-figure-2 {
+    margin: 0 40px 0 0;
+    width: calc((100% - 80px) / 3);
+}
+
+.class-figure-2:last-of-type {
+    margin-right: 0;
+}
+
+.pricing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/man-frontsquat.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pricing-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pricing-plan {
+    margin: 0 30px 0 0;
+    width: calc((100% - 60px) / 3);
+}
+
+.pricing-plan:last-of-type {
+    margin-right: 0;
+}
+
+.plan-name {
+    background: $pricing-plan-color;
+    padding: 50px 0;
+}
+
+.pricing-plan:nth-child(2) .plan-name {
+    background: $main-color;
+}
+
+.plan-price {
+    background: #ecf0f1;
+    padding: 25px 0;
+}
+
+.middle .plan-price {
+    padding: 35px 0;
+}
+
+.plan-details {
+    background: $background-color;
+}
+
+.plan-details ul {
+    list-style: disc inside;
+}
+
+.plan-details li {
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #ecf0f1;
+    color: $pricing-plan-color;
+    font-size: 1.5rem;
+}
+
+.plan-learnMore {
+    background: $background-color;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-learnMore-btn {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: $header-font;
+    font-weight: 900;
+    color: $background-color;
+    background: $pricing-plan-color;
+    border-radius: 200px;
+    transition-delay: background-color 0.7s, color 0.7s;
+}
+
+.plan-learnMore-mbtn {
+    background: $main-color;
+}
+
+.plan-learnMore-btn:hover,
+.plan-learnMore-btn:active {
+    background: $main-color;
+}
+
+.plan-learnMore-mbtn:hover,
+.plan-learnMore-mbtn:active {
+    color: black;
+}
+
+.middle .plan-learnMore {
+    padding: 50px 0;
+}
+
+.trainers-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.trainer-info {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+}
+
+.trainer-info:last-of-type {
+    margin-right: 0;
+}
+
+.trainer-pic {
+    border: 1px solid #888888;
+    box-shadow: 5px 10px 18px #888888;
+    transition: all 0.7s;
+    width: 100%;
+}
+
+.trainer-pic:hover {
+    transform: scale(1.1);
+}
+
+.trainer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.trainer-social li {
+    margin-right: 25px;
+}
+
+.trainer-social li:last-of-type {
+    margin-right: 0;
+}
+
+.elite-social {
+    display: flex;
+}
+
+.elite-social li {
+    margin-right: 15px;
+}
+
+.elite-social li:last-of-type {
+    margin-right: 0;
+}
+
+/* ------------------------   FOOTER STYLES  ----------------------------------------*/
+
+footer {
+    background: rgb(34, 34, 34);
+    padding-top: 25px;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-section {
+    margin-right: 25px;
+}
+
+.footer-address {
+    width: calc(25% - 25px)
+}
+
+.footer-map {
+    width: calc(40% - 25px);
+}
+
+.footer-form {
+    width: calc(35% - 25px);
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.googleMap {
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+// .map {
+//     position: relative;
+// }
+
+// .mapMarker {
+//     position: absolute;
+//     top: 28%;
+//     left: 49%;
+// }
+
+// .mapMarker img {
+//     width: 50%;
+// }
+
+.footer-section-2 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer-section-2 div {
+    width: 8%;
+    height: 8%;
+    margin-right: 8px;
+}
+
+.footer-section-2 p {
+    margin: 0;
+}
+
+.inVisible {
+    visibility: hidden;
+}
+
+/*--------------------------- FORM STYLES -------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input,
+textarea {
+    display: block;
+    font-family: $paragraph-font;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+placeholder {
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background: rgb(34, 34, 34);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background: $main-color;
+    border: none;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*--------------------------------------KEY FRAMES ---------------------------*/
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .background-container {
+        height: 65vh;
+    }
+    .background {
+        background-size: cover;
+    }
+    .background-header {
+        font-size: 3rem;
+    }
+    .startNow {
+        padding: 2px 15px;
+        font-size: 1.5rem;
+        transition: all 0.7s;
+    }
+    .nav-main {
+        padding: 0 10px;
+    }
+    .nav-main-list {
+        display: none;
+    }
+    .mobile-nav.open {
+        left: 0;
+        right: 70%;
+    }
+    .main-wrapper.open {
+        left: 30%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .class-gallery {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .class-figure {
+        width: 85%;
+        margin: 20px 0 0 0;
+    }
+    .pricing-container {
+        flex-direction: column;
+    }
+    .pricing-plan {
+        width: 85%;
+        margin: 20px 0 0 0;
+    }
+    .trainers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainer-info {
+        width: 85%;
+        margin: 20px 0 0 0;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        width: 85%;
+        margin: 30px 0 0 0;
+    }
+    .footer-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapMarker {
+        top: 32%;
+        left: 50%;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footer-form>* {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .main-wrapper {
+        transition: all 0.1s;
+    }
+    .mobile-nav {
+        align-items: flex-start;
+        transition: all 0.1s;
+    }
+    .mobile-nav li {
+        width: 50%;
+        border-bottom: none;
+        padding-left: 10px;
+    }
+    .mobile-link {
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    .class-figure {
+        width: 100%;
+    }
+    .pricing-plan {
+        width: 100%;
+    }
+    .trainer-info {
+        width: 100%;
+    }
+    .footer-section {
+        width: 100%;
+    }
+}
+
+
